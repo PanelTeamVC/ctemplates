@@ -20,7 +20,6 @@ export class SidebarComponent implements OnInit {
         $.getScript('./assets/app/js/core/app.js');
         $.getScript('./assets/app/js/core/app-menu.js');
       
-       
         this.menuItems = ROUTES.filter(menuItem => menuItem);
     }
 

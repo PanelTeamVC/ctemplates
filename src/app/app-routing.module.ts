@@ -17,7 +17,9 @@ import { DetachedStickyLeftSidebarLayoutComponent } from './layouts/detached-sti
 import { DetachedLeftSidebarLayoutComponent } from './layouts/detached-left-sidebar-layout/detached-left-sidebar-layout.component';
 import { OneColumnLayoutComponent } from './layouts/1-column-layout/1-column-layout.component';
 import { TwoColumnsLayoutComponent } from './layouts/2-columns-layout/2-columns-layout.component';
+import { HomeComponent } from './layouts/home-layout/home-layout.component';
 
+import { HOME_ROUTES } from "./shared/routes/home.routes";
 import { ONE_COLUMN_ROUTES } from "./shared/routes/1-column-layout.routes";
 import { TWO_COLUMN_ROUTES } from "./shared/routes/2-columns-layout.routes";
 import { BOXED_ROUTES } from "./shared/routes/boxed-layout.routes";
@@ -40,9 +42,10 @@ import { AuthGuard } from './shared/auth/auth-guard.service';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '2-columns-layout',
+    redirectTo: 'home-layout',
     pathMatch: 'full',
   },
+  { path: '', component: HomeComponent, data: { title: '' }, children: HOME_ROUTES, canActivate: [AuthGuard] },
   { path: '', component: OneColumnLayoutComponent, data: { title: '' }, children: ONE_COLUMN_ROUTES, canActivate: [AuthGuard] },
   { path: '', component: TwoColumnsLayoutComponent, data: { title: '' }, children: TWO_COLUMN_ROUTES, canActivate: [AuthGuard] },
   { path: '', component: BoxedLayoutComponent, data: { title: '' }, children: BOXED_ROUTES, canActivate: [AuthGuard] },
@@ -59,6 +62,7 @@ const appRoutes: Routes = [
   { path: '', component: LightLayoutComponent, data: { title: '' }, children: LIGHT_ROUTES, canActivate: [AuthGuard] },
   { path: '', component: SemiDarkLayoutComponent, data: { title: '' }, children: SEMI_DARK_ROUTES, canActivate: [AuthGuard] },
   { path: '', component: StaticLayoutComponent, data: { title: '' }, children: STATIC_ROUTES, canActivate: [AuthGuard] },
+
 ];
 
 @NgModule({

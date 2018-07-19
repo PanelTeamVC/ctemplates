@@ -13,3 +13,4 @@ export class TwoColumnsLayoutPageComponent implements OnInit {
   }
 
 }
+

@@ -18,3 +18,4 @@ import { TwoColumnsLayoutPageComponent } from './2-columns-layout-page.component
     ]
 })
 export class TwoColumnsLayoutPagesModule { }
+

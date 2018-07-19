@@ -1,13 +1,4 @@
-/*=========================================================================================
-  File Name: app-menu.js
-  Description: Menu navigation, custom scrollbar, hover scroll bar, multilevel menu
-  initialization and manipulations
-  ----------------------------------------------------------------------------------------
-  Item Name: Stack - Responsive Admin Theme
-  Version: 3.0
-  Author: GeeksLabs
-  Author URL: http://www.themeforest.net/user/geekslabs
-==========================================================================================*/
+
 (function(window, document, $) {
 
   'use strict';

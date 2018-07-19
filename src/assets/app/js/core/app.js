@@ -1,12 +1,3 @@
-/*=========================================================================================
-  File Name: app.js
-  Description: Template related app JS.
-  ----------------------------------------------------------------------------------------
-  Item Name: Stack - Responsive Admin Theme
-  Version: 3.0
-  Author: GeeksLabs
-  Author URL: http://www.themeforest.net/user/geekslabs
-==========================================================================================*/
 
 (function(window, document, $) {
     'use strict';

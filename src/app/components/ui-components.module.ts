@@ -24,7 +24,6 @@ import { TimepickerComponent } from './timepicker/timepicker.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { TypeaheadComponent } from './typeahead/typeahead.component';
 
-
 @NgModule({
     imports: [
         CommonModule,

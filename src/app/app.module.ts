@@ -22,6 +22,7 @@ import { DetachedStickyLeftSidebarLayoutComponent } from './layouts/detached-sti
 import { DetachedLeftSidebarLayoutComponent } from './layouts/detached-left-sidebar-layout/detached-left-sidebar-layout.component';
 import { OneColumnLayoutComponent } from './layouts/1-column-layout/1-column-layout.component';
 import { TwoColumnsLayoutComponent } from './layouts/2-columns-layout/2-columns-layout.component';
+import { HomeComponent } from './layouts/home-layout/home-layout.component';
 
 import { AuthService } from './shared/auth/auth.service';
 import { AuthGuard } from './shared/auth/auth-guard.service';
@@ -50,7 +51,8 @@ import * as $ from 'jquery';
         StaticLayoutComponent,
         LightLayoutComponent,
         DarkLayoutComponent,
-        SemiDarkLayoutComponent
+        SemiDarkLayoutComponent,
+        HomeComponent
        
     ],
     imports: [
