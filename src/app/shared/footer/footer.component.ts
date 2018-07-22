@@ -1,4 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
+import { DatawebService } from '../../services/dataweb.service';
 
 @Component({
     // moduleId: module.id,
@@ -9,4 +10,6 @@ import { Component, HostBinding } from '@angular/core';
 
 export class FooterComponent{
     currentDate : Date = new Date();
+
+    constructor( public _dw:DatawebService){}
 }

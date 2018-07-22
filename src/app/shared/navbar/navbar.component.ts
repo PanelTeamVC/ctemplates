@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatawebService } from '../../services/dataweb.service';
 
 @Component({
     selector: 'app-navbar',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NavbarComponent implements OnInit{
+    
+    constructor ( public _dw:DatawebService){}
+    
     ngOnInit() {
       
     }

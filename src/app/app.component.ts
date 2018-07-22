@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { DatawebService } from './services/dataweb.service';
 
 @Component({
     selector: 'app-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+    constructor( public _dw:DatawebService ) {
+
+        
+
+    }
 }

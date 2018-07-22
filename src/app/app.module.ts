@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from "./shared/shared.module";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { HttpModule } from '@angular/http'
+
 import { AppComponent } from './app.component';
 import { SemiDarkLayoutComponent } from './layouts/semi-dark-layout/semi-dark-layout.component';
 import { DarkLayoutComponent } from './layouts/dark-layout/dark-layout.component';
@@ -23,6 +25,10 @@ import { DetachedLeftSidebarLayoutComponent } from './layouts/detached-left-side
 import { OneColumnLayoutComponent } from './layouts/1-column-layout/1-column-layout.component';
 import { TwoColumnsLayoutComponent } from './layouts/2-columns-layout/2-columns-layout.component';
 import { HomeComponent } from './layouts/home-layout/home-layout.component';
+
+//Mis Servicios
+import { DatawebService } from './services/dataweb.service';
+
 
 import { AuthService } from './shared/auth/auth.service';
 import { AuthGuard } from './shared/auth/auth-guard.service';
@@ -57,13 +63,15 @@ import * as $ from 'jquery';
     ],
     imports: [
         BrowserAnimationsModule,
+        HttpModule,
         AppRoutingModule,
         SharedModule,
         NgbModule.forRoot()
     ],
     providers: [
         AuthService,
-        AuthGuard
+        AuthGuard,
+        DatawebService
     ],
     bootstrap: [AppComponent]
 })
