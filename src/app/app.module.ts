@@ -26,9 +26,10 @@ import { OneColumnLayoutComponent } from './layouts/1-column-layout/1-column-lay
 import { TwoColumnsLayoutComponent } from './layouts/2-columns-layout/2-columns-layout.component';
 import { HomeComponent } from './layouts/home-layout/home-layout.component';
 
-//Mis Servicios
+//Mis Servicios locales
 import { DatawebService } from './services/dataweb.service';
 
+//Mis servicios Externos
 
 import { AuthService } from './shared/auth/auth.service';
 import { AuthGuard } from './shared/auth/auth-guard.service';
@@ -36,8 +37,10 @@ import { AuthGuard } from './shared/auth/auth-guard.service';
 import * as $ from 'jquery';
 
 
-
-
+/*Firebase*/ 
+import { AngularFireModule } from 'angularfire2'; //Referencia utliza configuracion
+import { AngularFireDatabaseModule } from 'angularfire2/database'; //Utilizar la BD
+import { environment } from "../environments/environment";
 
 @NgModule({
     declarations: [
@@ -66,6 +69,8 @@ import * as $ from 'jquery';
         HttpModule,
         AppRoutingModule,
         SharedModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireDatabaseModule,
         NgbModule.forRoot()
     ],
     providers: [

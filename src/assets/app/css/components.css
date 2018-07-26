@@ -87,13 +87,7 @@ html {
 
 /*=========================================================================================
 	File Name: sidebar.scss
-	Description: content sidebar specific scss.
-	----------------------------------------------------------------------------------------
-	Item Name: Stack - Responsive Admin Theme
-	Version: 3.0
-	Author: PIXINVENT
-	Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+=========================================================================================*/
 .sidebar {
   position: relative;
   width: 100%; }
@@ -134,12 +128,7 @@ footer.footer-dark {
 
 /*=========================================================================================
 	File Name: navigations.scss
-	Description: Common mixin for menus, contain dark and light version scss.
-	----------------------------------------------------------------------------------------
-	Item Name: Stack - Responsive Admin Theme
-	Version: 3.0
-	Author: PIXINVENT
-	Author URL: http://www.themeforest.net/user/pixinvent
+
 ==========================================================================================*/
 .main-menu {
   z-index: 1000;
